@@ -4,12 +4,15 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
-    margin-left: 50px;
-    margin-top: 50px;
+    
 }
 
 
 /* style  influencer */
+header{
+    margin-left: 50px;
+    margin-top: 50px;
+}
 h1{
     font-size: 50px;
 }
@@ -20,6 +23,10 @@ h1{
     align-items: center;
     width: 100%;
 }
+   
+    
+    
+    
 
  
 
@@ -37,9 +44,8 @@ h1{
    color: white;
 
 }
-i{
-    margin-left: 10px;
-}
+
+
 .flat-botton:hover{
     background-color: tomato;
     text-shadow: 10px 5px 5px gray;
@@ -52,7 +58,7 @@ i{
 /* style gallary start */
 
 main{
-    display: flex;
+     display: flex; 
     flex-direction: column;
     align-items: center;
 }
@@ -85,7 +91,7 @@ main{
     text-align: center;
 }
 
-}
+
 .price{
     font-weight: 400;
     margin-top: 1%;
@@ -133,9 +139,25 @@ footer{
     color: honeydew;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-} 
+    margin-top: 20px;}
+    
 /* footer  end*/
+/* ///////////// @media start */
+
+/* mobile divice */
+@media only screen and (max-width:688px){
+    
+    .influencer, .popular-collection{
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+    
+       
+        
+    
+    
 
 
 
