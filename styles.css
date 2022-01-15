@@ -101,6 +101,9 @@ main{
     color: orange;
     margin: 0;
 }
+.paragraph-color{
+    color: #787885;
+}
 a{
     text-decoration: none;
     display: flex;
@@ -144,7 +147,8 @@ footer{
 /* footer  end*/
 /* ///////////// @media start */
 
-/* mobile divice */
+/* mobile divice//////////////////////// */
+
 @media only screen and (max-width:688px){
     
     .influencer, .popular-collection{
@@ -152,6 +156,20 @@ footer{
         grid-template-columns: repeat(1, 1fr);
     }
     
+}
+/* tab divice ///////////////// */
+
+@media only screen and (min-width:689px)and (max-width:980px) {
+    main{
+        flex-wrap: wrap;
+    }
+    
+    .influencer, .popular-collection{
+        
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+    }
 }
     
        
